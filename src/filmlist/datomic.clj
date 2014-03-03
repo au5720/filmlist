@@ -20,4 +20,3 @@
 
 
 (def name (:filmlist/name (d/entity (d/db conn) (ffirst (d/q '[:find ?e ?name :where [?e :filmlist/name ?name]] (d/db conn))))))
-
