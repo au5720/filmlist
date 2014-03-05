@@ -5,4 +5,5 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [lein-light-nrepl "0.0.15"]
-                 [com.datomic/datomic-free "0.9.4556"]])
+                 [com.datomic/datomic-free "0.9.4556"]
+                 [cheshire "5.3.1"]])

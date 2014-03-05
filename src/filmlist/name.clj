@@ -1,4 +1,5 @@
-(ns filmlist.name)
+(ns filmlist.name
+  (:require [cheshire.core :refer :all]))
 
 ;; http://deanclatworthy.com/imdb/?q=world+war&year=2013
 
@@ -31,3 +32,6 @@
     (if y
       (str query "&year=" y)
       query)))
+
+(defn get-film-details [f]
+  (parse-string  (slurp  (query-api f))))
